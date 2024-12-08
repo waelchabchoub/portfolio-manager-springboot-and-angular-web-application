@@ -1,0 +1,67 @@
+<section id="skills" class="skills section light-background">
+	<div class="container section-title" data-aos="fade-up">
+		<h2>{{ 'SKILLS.SELF' | translate }}</h2>
+		<p>{{ 'SKILLS.DESCRIPTION' | translate }}</p>
+	</div>
+	<div class="container" data-aos="fade-up" data-aos-delay="100">
+		<div class="row skills-content skills-animation">
+			<div class="col-lg-6" *ngFor="let skill of skills; let i = index">
+				<div class="progress">
+					<!-- Show either the progress bar or the editing form -->
+					<span class="skill">
+						<span *ngIf="editedSkill?.id !== skill.id">{{ skill.skill }}</span>
+						<i *ngIf="editedSkill?.id !== skill.id" class="val">{{ skill.progress }}%</i>
+					</span>
+
+					<!-- Progress bar (visible when not editing) -->
+					<div class="progress-bar-wrap" *ngIf="editedSkill?.id !== skill.id">
+						<div class="progress-bar" role="progressbar" [style.width.%]="skill.progress"
+							[attr.aria-valuenow]="skill.progress" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+
+					<!-- Editing form (visible when editing) -->
+
+					<div *ngIf="isLoggedIn() && editedSkill && editedSkill?.id === skill.id" class="col-lg-12 mt-3">
+						<form (ngSubmit)="editSkill()" class="d-flex align-items-center">
+							<div class="col-lg-8 me-2">
+								<input class="form-control form-control-sm" type="text" [(ngModel)]="editedSkill.skill"
+									name="editedSkillName" placeholder="Skill Name" required />
+							</div>
+							<div class="col-lg-2 me-2">
+								<input class="form-control form-control-sm" type="number"
+									[(ngModel)]="editedSkill.progress" name="editedSkillProgress"
+									placeholder="Progress (%)" min="0" max="100" required />
+							</div>
+							<div class="col-lg-2">
+								<button type="submit" class="btn btn-success btn-sm">Save</button>
+							</div>
+						</form>
+					</div>
+
+					<!-- Edit/Delete buttons (only visible when not editing) -->
+					<div *ngIf="editedSkill?.id !== skill.id && isLoggedIn()" class="mt-1">
+						<button class="btn btn-sm btn-warning me-1" (click)="toggleEdit(skill)">
+							<i class="bi bi-pencil"></i>
+						</button>
+						<button class="btn btn-sm btn-danger" (click)="deleteSkill(skill)">
+							<i class="bi bi-trash"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Add New Skill -->
+	<div *ngIf="isLoggedIn()" class="container mt-3" data-aos="fade-up">
+		<label for="skill"><Strong>Add new skill</Strong></label>
+		<div class="col-lg-6 d-flex align-items-center">
+			<input class="form-control me-2" type="text" id="skill" #newSkillName placeholder="Skill Name" />
+			<input class="form-control me-2" type="number" #newSkillProgress placeholder="Progress %" min="0"
+				max="100" />
+			<button class="btn btn-success btn-sm"
+				(click)="addSkill(newSkillName.value, convertToNumber(newSkillProgress.value)); newSkillName.value=''; newSkillProgress.value=''">
+				Add
+			</button>
+		</div>
+	</div>
+</section>

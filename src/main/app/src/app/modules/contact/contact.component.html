@@ -1,0 +1,71 @@
+<section id="contact" class="contact section">
+	<div class="container section-title" data-aos="fade-up">
+		<h2>{{ 'CONTACT.SELF' | translate }}</h2>
+		<p>{{ 'CONTACT.DESCRIPTION' | translate }}</p>
+	</div>
+	<div class="container" data-aos="fade-up" data-aos-delay="100">
+		<div class="row gy-4">
+			<div class="col-lg-5">
+				<div class="info-wrap">
+					<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+						<i class="bi bi-geo-alt flex-shrink-0"></i>
+						<div>
+							<h3>{{ 'CONTACT.ADDRESS' | translate }}</h3>
+							<p>Aachen, DE</p>
+						</div>
+					</div>
+					<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+						<i class="bi bi-telephone flex-shrink-0"></i>
+						<div>
+							<h3>{{ 'ABOUT.PHONE' | translate }}</h3>
+							<p>+49 15235871100</p>
+						</div>
+					</div>
+					<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+						<i class="bi bi-envelope flex-shrink-0"></i>
+						<div>
+							<h3>{{ 'ABOUT.EMAIL' | translate }}</h3>
+							<p>waelchabchoub&commat;outlook.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<form (ngSubmit)="sendEmail()" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+					<div class="row gy-4">
+						<div class="col-md-6">
+							<label for="name-field" class="pb-2">{{ 'CONTACT.YOURNAME' | translate }}</label>
+							<input type="text" [(ngModel)]="formData.name" name="name" id="name-field"
+								class="form-control" required="" />
+						</div>
+						<div class="col-md-6">
+							<label for="email-field" class="pb-2">{{ 'CONTACT.YOUREMAIL' | translate }}</label>
+							<input type="email" [(ngModel)]="formData.email" class="form-control" name="email"
+								id="email-field" required="" />
+						</div>
+						<div class="col-md-12">
+							<label for="subject-field" class="pb-2">{{ 'CONTACT.SUBJECT' | translate }}</label>
+							<input type="text" [(ngModel)]="formData.subject" class="form-control" name="subject"
+								id="subject-field" required="" />
+						</div>
+
+						<div class="col-md-12">
+							<label for="message-field" class="pb-2">{{ 'CONTACT.MESSAGE' | translate }}</label>
+							<textarea [(ngModel)]="formData.message" class="form-control" name="message" rows="10"
+								id="message-field" required=""></textarea>
+						</div>
+						<div class="col-md-12 text-center">
+							<div *ngIf="isLoading">{{ 'CONTACT.LOADING' | translate }}</div>
+							<div class="text-danger" *ngIf="formErrorMessage">{{ 'CONTACT.SENDERROR' | translate }}
+							</div>
+							<div class="text-danger" *ngIf="serverErrorMessage">{{serverErrorMessage}}</div>
+							<div class="text-success" *ngIf="successMessage">{{ 'CONTACT.SENDSUCCESS' | translate }}
+							</div>
+							<button type="submit">{{ 'CONTACT.SENDMESSAGE' | translate }}</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

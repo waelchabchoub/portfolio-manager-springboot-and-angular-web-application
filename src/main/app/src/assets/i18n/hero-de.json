@@ -1,0 +1,8 @@
+{
+  "HERO": {
+    "IAM": "Ich bin",
+    "SOFTWAREENGINNER": "Software-Entwickler",
+    "DATAENGINEER": "Dateningenieur",
+    "JAVADEVELOPER": "Java-Entwickler"
+  }
+}

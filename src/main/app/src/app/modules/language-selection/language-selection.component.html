@@ -1,0 +1,16 @@
+<div mdbDropdown class="dropdown">
+	<a mdbDropdownToggle class="btn dropdown-toggle" id="Dropdown" type="button" aria-expanded="false">
+		<i class="flag-united-kingdom flag" *ngIf="selectedLanguage == 'en'"></i>
+		<i class="flag-germany flag" *ngIf="selectedLanguage == 'de'"></i>
+	</a>
+	<ul mdbDropdownMenu class="dropdown-menu bg-dark text-white" aria-labelledby="Dropdown">
+		<li *ngFor="let language of availableLanguages">
+			<button class="dropdown-item text-white" (click)="onLanguageChange(language)">
+				<i class="flag-united-kingdom flag" *ngIf="language === 'en'"></i>
+				<i class="flag-germany flag" *ngIf="language === 'de'"></i>
+				{{ language | uppercase }}
+				<i class="fa fa-check text-success ms-2" *ngIf="selectedLanguage === language"></i>
+			</button>
+		</li>
+	</ul>
+</div>

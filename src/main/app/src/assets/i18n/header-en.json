@@ -1,0 +1,10 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "RESUME": "Resume",
+    "PORTFOLIO": "Portfolio",
+    "SERVICES": "Services",
+    "CONTACT": "Contact"
+  }
+}
