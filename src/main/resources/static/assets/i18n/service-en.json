@@ -1,0 +1,20 @@
+{
+	"SERVICE": {
+		"SELF": "Service",
+		"DESCRIPTION": "This portfolio showcases a variety of services I provide, crafted through years of experience in software development and machine learning engineering. With a strong foundation in Java development, data science, and cloud computing, I’ve created tailored solutions for businesses looking to scale, optimize, and innovate. My expertise extends from building high-performance applications to deploying machine learning models and integrating complex systems. Below are the key areas where I’ve made a significant impact",
+		"SERVICES": {
+			"TITLE1": "Java Development",
+			"DESCRIPTION1": "I design and implement robust, scalable, and high-performance applications using Java. Whether it's backend development, building REST APIs, or utilizing frameworks like Spring, my work is focused on creating secure and efficient software that meets specific business needs.",
+			"TITLE2": "Machine Learning Engineering",
+			"DESCRIPTION2": "I apply advanced machine learning techniques to turn data into actionable insights. From data preprocessing to model development and deployment, I create models that drive smarter decision-making and enhance operational efficiencies.",
+			"TITLE3": "Software Consulting",
+			"DESCRIPTION3": "My consulting services are aimed at optimizing software development processes, incorporating best practices, and improving system efficiency. I work closely with teams to implement the right technologies and strategies for each project, ensuring quality and performance.",
+			"TITLE4": "Data Science & Analytics",
+			"DESCRIPTION4": "Through data analysis and predictive modeling, I enable businesses to uncover trends, patterns, and actionable insights. My work in data science helps clients turn complex datasets into strategic decisions that drive growth and improve performance.",
+			"TITLE5": "Application Performance Optimization",
+			"DESCRIPTION5": "I specialize in identifying and optimizing performance bottlenecks in software applications. By analyzing code, architecture, and infrastructure, I enhance the speed, scalability, and efficiency of your applications, ensuring they meet high-demand environments.",
+			"TITLE6": "System Integration",
+			"DESCRIPTION6": "I focus on ensuring seamless communication and interoperability between disparate systems. My system integration services enable businesses to unify their software applications, databases, and cloud environments, leading to better efficiency and reduced operational overhead."
+		}
+	}
+}

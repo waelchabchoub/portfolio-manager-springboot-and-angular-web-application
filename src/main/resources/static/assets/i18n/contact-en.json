@@ -1,0 +1,15 @@
+{
+	"CONTACT": {
+		"SELF": "Contact",
+		"DESCRIPTION": "Feel free to get in touch for inquiries, collaboration opportunities, or project discussions. Fill out the form below, and I’ll get back to you as soon as possible.",
+		"ADDRESS": "Address",
+		"YOURNAME": "Your Name",
+		"YOUREMAIL": "Your Email",
+		"SUBJECT": "Subject",
+		"MESSAGE": "Message",
+		"SENDMESSAGE": "Send Message",
+		"LOADING": "Loading",
+		"SENDERROR": "Please fill in the form!",
+		"SENDSUCCESS": "Your message has been sent. Thank you!"
+	}
+}
