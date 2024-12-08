@@ -1,0 +1,18 @@
+{
+  "ABOUT": {
+    "ABOUTME": "Über mich",
+    "ABOUT1": "Mit einem soliden Fundament in Informatik und praktischer Erfahrung in der Softwareentwicklung auf Unternehmensebene bin ich auf die Entwicklung von Lösungen spezialisiert, die Geschäftsanforderungen erfüllen und die Erwartungen der Benutzer übertreffen. Ob es um die Erstellung von RESTful-APIs, die Optimierung von Datenbankabfragen oder die Implementierung einer Microservices-Architektur geht, mein Ziel ist es, Innovation durch Technologie voranzutreiben.",
+    "ABOUT2": "Ich bin ein leidenschaftlicher und engagierter Java-Softwareentwickler mit umfassender Erfahrung in der Entwicklung skalierbarer und leistungsstarker Anwendungen. Ich bin erfahren im Entwerfen und Implementieren robuster Backend-Systeme und blühe in dynamischen und kollaborativen Umgebungen auf. Meine Expertise liegt in der Verwendung von Java-Frameworks wie Spring Boot, Hibernate und JPA, um effizienten und wartungsfreundlichen Code bereitzustellen.",
+    "TITLE": "Titel",
+    "BIRTHDAY": "Geburtstag",
+    "WEBSITE": "Webseite",
+    "PHONE": "Telefon",
+    "CITY": "Stadt",
+    "AGE": "Alter",
+    "DEGREE": "Grad",
+    "EMAIL": "Email",
+    "FREELANCE": "Freiberuflich",
+    "AVAILABLE": "Verfügbar",
+    "NOTAVAILABLE": "Nicht verfügbar" 
+  }
+}

@@ -1,0 +1,38 @@
+
+<!-- Create the user table based on the User entity -->
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+	<changeSet id="2" author="wch">
+		<preConditions onFail="MARK_RAN">
+			<not>
+				<tableExists tableName="admin" />
+			</not>
+		</preConditions>
+		<createTable tableName="admin">
+			<column name="id" type="BIGINT" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="login" type="VARCHAR(255)">
+				<constraints nullable="false" unique = "true"/>
+			</column>
+			<column name="password" type="VARCHAR(255)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
+
+	<changeSet id="5" author="wch">
+		<preConditions onFail="MARK_RAN">
+			<not>
+				<sqlCheck expectedResult="0">SELECT COUNT(*) FROM admin WHERE
+					login = 'admin'</sqlCheck>
+			</not>
+		</preConditions>
+		<insert tableName="admin">
+			<column name="login" value="admin" />
+			<column name="password" value="admin" />
+		</insert>
+	</changeSet>
+</databaseChangeLog>

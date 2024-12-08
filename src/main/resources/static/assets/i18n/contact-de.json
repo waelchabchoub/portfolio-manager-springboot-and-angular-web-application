@@ -1,0 +1,15 @@
+{
+	"CONTACT": {
+		"SELF": "Kontakt",
+		"DESCRIPTION": "Fühlen Sie sich frei, sich bei Fragen, Kooperationsmöglichkeiten oder Projektbesprechungen zu melden. Füllen Sie das untenstehende Formular aus, und ich werde mich so schnell wie möglich bei Ihnen melden.",
+		"ADDRESS": "Adresse",
+		"YOURNAME": "Ihr Name",
+		"YOUREMAIL": "Ihre E-Mail",
+		"SUBJECT": "Betreff",
+		"MESSAGE": "Nachricht",
+		"SENDMESSAGE": "Nachricht senden",
+		"LOADING": "Wird geladen",
+		"SENDERROR": "Bitte füllen Sie das Formular aus!",
+		"SENDSUCCESS": "Ihre Nachricht wurde gesendet. Vielen Dank!"
+	}
+}

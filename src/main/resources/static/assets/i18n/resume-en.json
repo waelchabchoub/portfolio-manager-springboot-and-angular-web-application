@@ -1,0 +1,34 @@
+{
+	"RESUME": {
+		"SELF": "Resume",
+		"DESCRIPTION": "Passionate and results-oriented Software Engineer with a strong focus on Java development and machine learning. Adept at building scalable, efficient, and innovative software solutions to solve complex problems. Committed to staying at the forefront of technology trends and delivering impactful applications.",
+		"SUMMARY": {
+			"SELF": "Summary",
+			"DESCRIPTION": "Dedicated and highly skilled Software Engineer with over 2 years of experience in developing robust Java applications and implementing cutting-edge machine learning models. Proficient in designing, developing, and deploying end-to-end software solutions that deliver high-quality user experiences and drive business growth."
+		},
+		"EDUCATION": {
+			"SELF": "Education",
+			"DEGREE1": "Bachelor of Computer Science",
+			"UNIVERSITY1": "Higher Institute of Applied Sciences & Technology, Sousse, Tunisia",
+			"DESCRIPTION1": "Comprehensive foundation in computer science principles, including data structures, algorithms, and object-oriented programming.",
+			"DEGREE2": "Master Degree in Software Engineering",
+			"UNIVERSITY2": "Higher Institute of Applied Sciences & Technology, Sousse, Tunisia",
+			"DESCRIPTION2": "Advanced studies focusing on software architecture, scalable system design, and emerging technologies in software engineering."
+		},
+		"PROFFESIONALEXPERIENCE": {
+			"SELF": "Professional Experience",
+			"TITLE1": "Internship",
+			"DESCRIPTION1": "Developed an Odoo module to optimize the university's internal processes,significantly improving the efficiency and accuracy of administrative operations.",
+			"TITLE2": "Internship",
+			"DESCRIPTION2": "Streamlined the student recognition process at the university by designing and implementing a mobile application featuring advanced face detection and recognition capabilities, demonstrating expertise in innovative app development and image processing.",
+			"TITLE3": "Internship",
+			"DESCRIPTION3": "Redesigned the car rental process by creating an intuitive website with integrated admin and user modules,significantly enhancing user experience and improving operational efficiency.",
+			"TITLE4": "Artificial Intelligence Instructor",
+			"DESCRIPTION4": "Developed and conducted hands-on AI-focused laboratory workshops, engaging studentsin practical exercisesto build skillsin machine learning, data analysis, and algorithm development, resulting in improved comprehension and application of AIconcepts.",
+			"TITLE5": "Cyber Security Instructor",
+			"DESCRIPTION5": "Designed and led hands-on laboratory workshops that engaged up to 200 students at a time implemented practical exercises which resulted in significant skill enhancement as evidenced by improved projectcompletion rates among participants.",
+			"TITLE6": "Software Engineer",
+			"DESCRIPTION6": "Revolutionized hospital operations by designing and developing an advanced software application that streamlined internal processes, improving patient care delivery and administrative efficiency, minimized the risk of medical errorsresulting in improved patientsatisfaction and an increase in hospital staff productivity"
+		}
+	}
+}
