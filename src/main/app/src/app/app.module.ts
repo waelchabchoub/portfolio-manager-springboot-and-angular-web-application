@@ -11,7 +11,7 @@ import { UserService } from './services/user.service';
 import { AdminComponent } from './modules/admin/admin.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, } from '@angular/router';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { JwtInterceptor } from './interceptors/jwt.interceptor';
 import { LogoutComponent } from './modules/logout/logout.component';
@@ -31,10 +31,6 @@ import { ContactComponent } from './modules/contact/contact.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { EmailService } from './services/email.service';
 
-export function HttpLoaderFactory(http: HttpClient) {
-	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
-
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -47,10 +43,10 @@ export function HttpLoaderFactory(http: HttpClient) {
 		LanguageSelectionComponent,
 		StatsComponent,
 		SkillsComponent,
-  ResumeComponent,
-  ServiceComponent,
-  ContactComponent,
-  FooterComponent,
+		ResumeComponent,
+		ServiceComponent,
+		ContactComponent,
+		FooterComponent,
 	],
 	imports: [
 		CommonModule,
@@ -67,11 +63,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 			anchorScrolling: 'enabled'
 		}),
 		TranslateModule.forRoot({
-			loader: {
-				provide: TranslateLoader,
-				useFactory: HttpLoaderFactory,
-				deps: [HttpClient]
-			}
 		}),
 		BrowserAnimationsModule,
 		MdbDropdownModule
