@@ -24,11 +24,11 @@ export class HomeComponent implements AfterViewInit {
 		this.libraryService.initNavmenuScrollspy();
 
 		setTimeout(() => {
-
+			this.libraryService.initSkillsAnimation();
 			const isotopeContainer = document.querySelector('.isotope-container') as HTMLElement;
 			if (isotopeContainer) {
 				this.libraryService.initIsotope(isotopeContainer);
 			}
-		}, 0);
+		}, 200);
 	}
 }

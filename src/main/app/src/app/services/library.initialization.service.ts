@@ -101,21 +101,17 @@ export class LibraryInitializationService {
 
 	public initSkillsAnimation(): void {
 		const progressBars = document.querySelectorAll('.progress .progress-bar') as NodeListOf<HTMLElement>;
-
 		progressBars.forEach((progressBar) => {
 			progressBar.style.width = '0%';
 			progressBar.style.transition = 'none';
 		});
-
 		const skillsElements = document.querySelectorAll('.skills-animation');
-
 		skillsElements.forEach((item) => {
 			new Waypoint({
 				element: item as HTMLElement,
 				offset: '80%',
 				handler: function() {
 					const progressBars = item.querySelectorAll('.progress .progress-bar') as NodeListOf<HTMLElement>;
-
 					progressBars.forEach((progressBar) => {
 						const value = progressBar.getAttribute('aria-valuenow');
 						if (value) {
@@ -128,16 +124,6 @@ export class LibraryInitializationService {
 				},
 			});
 		});
-
-		setTimeout(() => {
-			progressBars.forEach((progressBar) => {
-				const value = progressBar.getAttribute('aria-valuenow');
-				if (value) {
-					progressBar.style.transition = 'width 1s ease-out';
-					progressBar.style.width = `${value}%`;
-				}
-			});
-		}, 200);
 	}
 
 	public initGlightbox(): void {
