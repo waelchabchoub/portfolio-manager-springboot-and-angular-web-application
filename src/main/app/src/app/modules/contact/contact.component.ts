@@ -35,16 +35,11 @@ export class ContactComponent {
 				},
 				(error) => {
 					this.isLoading = false;
-					if (error.status == 200) {
-						this.successMessage = true;
-					} else {
-						this.serverErrorMessage = error.message;
-					}
+					this.serverErrorMessage = error.message;
 				}
 			);
 		} else {
 			this.formErrorMessage = true;
 		}
 	}
-
 }

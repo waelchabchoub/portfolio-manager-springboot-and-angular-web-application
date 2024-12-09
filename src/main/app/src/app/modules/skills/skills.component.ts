@@ -15,7 +15,7 @@ export class SkillsComponent {
 	skills: Skill[] = [];
 	editedSkill: Skill | null = null;
 
-	constructor(private skillService: SkillService, private logger: NGXLogger, private authService: AuthService, private translate: TranslateService, private cdr: ChangeDetectorRef) { }
+	constructor(private skillService: SkillService, private logger: NGXLogger, private authService: AuthService, private translate: TranslateService) { }
 
 	ngOnInit(): void {
 		this.getSkills();
@@ -67,7 +67,6 @@ export class SkillsComponent {
 			this.skillService.deleteSkill(skill.id).subscribe(
 				() => {
 					this.skills = this.skills.filter(s => s.id !== skill.id);
-					this.cdr.detectChanges();  
 				},
 				(error) => {
 					this.logger.error(error);
