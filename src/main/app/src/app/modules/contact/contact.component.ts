@@ -32,6 +32,7 @@ export class ContactComponent {
 				(response) => {
 					this.isLoading = false;
 					this.successMessage = true;
+					this.resetFormData();
 				},
 				(error) => {
 					this.isLoading = false;
@@ -41,5 +42,14 @@ export class ContactComponent {
 		} else {
 			this.formErrorMessage = true;
 		}
+	}
+
+	resetFormData() {
+		this.formData = {
+			name: '',
+			email: '',
+			subject: '',
+			message: ''
+		};
 	}
 }

@@ -13,11 +13,11 @@ public class EmailService {
 
     public void sendSimpleEmail(String senderName, String senderEmail, String subject, String senderMessage) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo("");
+        message.setTo("waelchabchoub@outlook.com");
         message.setSubject(subject);
         String emailBody = "Sender: " + senderName + ",\n\n" + "Sender Email: " + senderEmail +  ",\n\n" + "Message: " + senderMessage;
         message.setText(emailBody);
-        message.setFrom("");
+        message.setFrom("mariembouchoucha26@gmail.com");
 
         mailSender.send(message);
     }
