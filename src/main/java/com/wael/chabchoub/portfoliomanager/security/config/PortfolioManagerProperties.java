@@ -13,6 +13,7 @@ import lombok.Setter;
 public class PortfolioManagerProperties {
 	private JwtProperties jwt;
 	private LanguageProperties language;
+	private EmailProperties email;
 	
 	@Getter
     @Setter
@@ -25,5 +26,12 @@ public class PortfolioManagerProperties {
     public static class LanguageProperties {
         private String defaultLanguage;
         private String[] availableLanguages;
+    }
+    
+    @Getter
+    @Setter
+    public static class EmailProperties {
+        private String from;
+        private String to;
     }
 }

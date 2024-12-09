@@ -2,9 +2,9 @@ spring:
   application:
     name: PortfolioManager
   datasource:
-    url: jdbc:postgresql://dpg-ctbee01u0jms73f8daig-a.frankfurt-postgres.render.com:5432/portfolio_manager_3l38
-    username: portfolio_manager_3l38_user
-    password: 99vVU81rbWfFkLOV9xbiWfZIQuf0ZpIS
+    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: none
@@ -23,8 +23,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: mariembouchoucha26@gmail.com
-    password: wcmeckfsqvlrvwaq
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
     properties:
       mail:
         smtp:
@@ -33,9 +33,12 @@ spring:
             enable: true
 portfoliomanager:
   jwt:
-    secret: 9ZCSTjBfD5kty0YQybqa8IMwXqKnwn8wgjg8X0hxwY8=
+    secret: ${JWT_SECRET}
   language:
     defaultLanguage: en 
     availableLanguages:
       - en
       - de
+  email:
+    from: ${EMAIL_FROM}
+    to: ${EMAIL_TO}
