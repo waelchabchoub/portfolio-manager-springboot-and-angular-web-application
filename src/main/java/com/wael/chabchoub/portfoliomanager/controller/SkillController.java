@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.wael.chabchoub.portfoliomanager.entity.ResponseMessage;
 import com.wael.chabchoub.portfoliomanager.entity.Skill;
 import com.wael.chabchoub.portfoliomanager.service.SkillService;
 
@@ -34,13 +35,14 @@ public class SkillController {
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<String> deleteSkill(@PathVariable("id") Long id) {
+	public ResponseEntity<ResponseMessage> deleteSkill(@PathVariable("id") Long id) {
 		try {
 			skillService.deleteSkill(id);
-			return ResponseEntity.ok("Skill deleted successfully.");
+			return ResponseEntity.ok(new ResponseMessage("Skill deleted successfully."));
 		} catch (RuntimeException e) {
-			return ResponseEntity.status(404).body(e.getMessage());
+			return ResponseEntity.status(404).body(new ResponseMessage(e.getMessage()));
 		}
 	}
+
 
 }
