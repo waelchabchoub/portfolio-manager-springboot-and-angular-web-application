@@ -1,9 +1,12 @@
 package com.wael.chabchoub.portfoliomanager.controller;
 
-import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.core.io.support.ResourcePatternResolver;
+import org.springframework.core.io.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,16 +28,19 @@ public class LanguageController {
 	}
 
 	@GetMapping("/api/translation-files")
-	public List<String> getTranslationFiles() {
+	public List<String> getTranslationFiles() throws IOException {
 		List<String> files = new ArrayList<>();
-		File dir = new File("src/main/resources/static/assets/i18n");
-		if (dir.exists() && dir.isDirectory()) {
-			for (File file : dir.listFiles()) {
-				if (file.getName().endsWith("-en.json") || file.getName().endsWith("-de.json")) {
-					files.add(file.getName());
-				}
+		ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+		String pattern = "classpath:static/assets/i18n/*.json";
+		Resource[] resources = resolver.getResources(pattern);
+
+		for (Resource resource : resources) {
+			String filename = resource.getFilename();
+			if (filename != null && (filename.endsWith("-en.json") || filename.endsWith("-de.json"))) {
+				files.add(filename);
 			}
 		}
+
 		return files;
 	}
 
