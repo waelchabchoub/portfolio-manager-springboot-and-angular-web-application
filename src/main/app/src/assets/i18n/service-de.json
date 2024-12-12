@@ -1,6 +1,6 @@
 {
 	"SERVICE": {
-		"SELF": "Dienstleistungen",
+		"SELF": "Fachkenntnisse",
 		"DESCRIPTION": "Dieses Portfolio zeigt eine Vielzahl von Dienstleistungen, die ich anbiete, basierend auf jahrelanger Erfahrung in der Softwareentwicklung und im maschinellen Lernen. Mit einer soliden Grundlage in Java-Entwicklung, Data Science und Cloud-Computing habe ich maßgeschneiderte Lösungen für Unternehmen entwickelt, die skalieren, optimieren und innovieren möchten. Meine Expertise reicht von der Entwicklung hochperformanter Anwendungen bis hin zur Bereitstellung von maschinellen Lernmodellen und der Integration komplexer Systeme. Im Folgenden sind die wichtigsten Bereiche aufgeführt, in denen ich einen erheblichen Einfluss hatte.",
 		"SERVICES": {
 			"TITLE1": "Java-Entwicklung",

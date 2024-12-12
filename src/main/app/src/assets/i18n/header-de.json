@@ -1,10 +1,10 @@
 {
   "HEADER": {
-    "HOME": "Heim",
+    "HOME": "Home",
     "RESUME": "Lebenslauf",
     "ABOUT": "Über mich",
     "PORTFOLIO": "Portfolio",
-    "SERVICES": "Dienstleistungen",
+    "SERVICES": "Fachkenntnisse",
     "CONTACT": "Kontakt"
   }
 }

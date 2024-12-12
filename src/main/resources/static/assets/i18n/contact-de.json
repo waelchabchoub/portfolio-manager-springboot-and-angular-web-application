@@ -1,10 +1,10 @@
 {
 	"CONTACT": {
 		"SELF": "Kontakt",
-		"DESCRIPTION": "Fühlen Sie sich frei, sich bei Fragen, Kooperationsmöglichkeiten oder Projektbesprechungen zu melden. Füllen Sie das untenstehende Formular aus, und ich werde mich so schnell wie möglich bei Ihnen melden.",
+		"DESCRIPTION": "Zögern Sie nicht, sich bei Fragen, Kooperationsmöglichkeiten oder Projektbesprechungen zu melden. Bitte füllen Sie das untenstehende Formular aus, und ich werde mich so schnell wie möglich bei Ihnen zurückmelden.",
 		"ADDRESS": "Adresse",
-		"YOURNAME": "Ihr Name",
-		"YOUREMAIL": "Ihre E-Mail",
+		"YOURNAME": "Name",
+		"YOUREMAIL": "E-Mail",
 		"SUBJECT": "Betreff",
 		"MESSAGE": "Nachricht",
 		"SENDMESSAGE": "Nachricht senden",

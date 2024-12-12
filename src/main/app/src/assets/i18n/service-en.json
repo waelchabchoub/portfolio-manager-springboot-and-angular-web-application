@@ -1,6 +1,6 @@
 {
 	"SERVICE": {
-		"SELF": "Service",
+		"SELF": "Expertise",
 		"DESCRIPTION": "This portfolio showcases a variety of services I provide, crafted through years of experience in software development and machine learning engineering. With a strong foundation in Java development, data science, and cloud computing, I’ve created tailored solutions for businesses looking to scale, optimize, and innovate. My expertise extends from building high-performance applications to deploying machine learning models and integrating complex systems. Below are the key areas where I’ve made a significant impact",
 		"SERVICES": {
 			"TITLE1": "Java Development",
