@@ -27,7 +27,6 @@ public class UserService {
         	 existing.setEmail(user.getEmail());
         	 existing.setAge(user.getAge());
         	 existing.setTitle(user.getTitle());
-        	 existing.setBirthday(user.getBirthday());
         	 existing.setWebsite(user.getWebsite());
         	 existing.setCity(user.getCity());
         	 existing.setDegree(user.getDegree());
