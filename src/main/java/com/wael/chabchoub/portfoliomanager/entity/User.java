@@ -24,12 +24,8 @@ public class User {
 	private String email;
 	@Column(name = "title", nullable = false)
 	private String title;
-	@Column(name = "birthday", nullable = false)
-	private LocalDate birthday;
 	@Column(name = "website", nullable = false)
 	private String website;
-	@Column(name = "phone_number", nullable = false)
-	private String phoneNumber;
 	@Column(name = "city", nullable = false)
 	private String city;
 	@Column(name = "degree", nullable = false)
