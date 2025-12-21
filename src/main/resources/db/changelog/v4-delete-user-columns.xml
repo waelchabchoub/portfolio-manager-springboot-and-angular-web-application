@@ -1,0 +1,13 @@
+
+<!-- Create the user table based on the User entity -->
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+	<changeSet id="6" author="wch">	
+    	<dropColumn tableName="user_info" columnName="birthday"/>
+	</changeSet>
+	<changeSet id="7" author="wch">	
+    	<dropColumn tableName="user_info" columnName="phone_number"/>
+	</changeSet>
+</databaseChangeLog>
