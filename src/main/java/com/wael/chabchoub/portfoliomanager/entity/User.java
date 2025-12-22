@@ -18,8 +18,6 @@ public class User {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-	@Column(name = "age", nullable = false)
-	private Integer age;
 	@Column(name = "email", nullable = false)
 	private String email;
 	@Column(name = "title", nullable = false)
