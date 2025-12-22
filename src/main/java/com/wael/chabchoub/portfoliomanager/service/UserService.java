@@ -25,7 +25,6 @@ public class UserService {
         if (existingUser.isPresent()) {
         	 User existing = existingUser.get();
         	 existing.setEmail(user.getEmail());
-        	 existing.setAge(user.getAge());
         	 existing.setTitle(user.getTitle());
         	 existing.setWebsite(user.getWebsite());
         	 existing.setCity(user.getCity());
