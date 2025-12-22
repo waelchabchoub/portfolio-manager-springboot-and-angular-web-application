@@ -45,19 +45,15 @@
 									<label for="city"><strong>{{ 'ABOUT.CITY' | translate }}</strong></label>
 									<input type="text" class="form-control" id="city" [(ngModel)]="user.city" name="city">
 								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="form-group">
-									<label for="age"><strong>{{ 'ABOUT.AGE' | translate }}</strong></label>
-									<input type="number" class="form-control" id="age" [(ngModel)]="user.age" name="age">
-								</div>
-								<div class="form-group">
-									<label for="degree"><strong>{{ 'ABOUT.DEGREE' | translate }}</strong></label>
-									<input type="text" class="form-control" id="degree" [(ngModel)]="user.degree" name="degree">
-								</div>
 								<div class="form-group">
 									<label for="email"><Strong>{{ 'ABOUT.EMAIL' | translate }}</Strong></label>
 									<input type="email" class="form-control" id="email" [(ngModel)]="user.email" name="email">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="degree"><strong>{{ 'ABOUT.DEGREE' | translate }}</strong></label>
+									<input type="text" class="form-control" id="degree" [(ngModel)]="user.degree" name="degree">
 								</div>
 								<div class="form-group">
 									<label for="freelance"><strong>	{{ 'ABOUT.FREELANCE' | translate }}</strong></label>
@@ -80,13 +76,12 @@
 								<li><i class="bi bi-chevron-right"></i> <strong>{{ 'ABOUT.WEBSITE' | translate }}:</strong> <span>{{ user.website }}</span>
 								<li><i class="bi bi-chevron-right"></i> <strong>{{ 'ABOUT.CITY' | translate }}:</strong> <span>{{ user.city }}</span>
 								</li>
-								<li><i class="bi bi-chevron-right"></i> <strong>{{ 'ABOUT.AGE' | translate }}:</strong> <span>{{ user.age }}</span></li>
+								<li><i class="bi bi-chevron-right"></i> <strong>{{ 'ABOUT.EMAIL' | translate }}:</strong> <span>{{ user.email }}</span></li>
 							</ul>
 						</div>
 						<div class="col-lg-6">
 							<ul>
 								<li><i class="bi bi-chevron-right"></i> <strong>{{ 'ABOUT.DEGREE' | translate }}:</strong> <span>{{ user.degree }}</span></li>
-								<li><i class="bi bi-chevron-right"></i> <strong>{{ 'ABOUT.EMAIL' | translate }}:</strong> <span>{{ user.email }}</span></li>
 								<li><i class="bi bi-chevron-right"></i> <strong>{{ 'ABOUT.FREELANCE' | translate }}:</strong> <span>{{ user.availableForFreeLance == true ? ('ABOUT.AVAILABLE' | translate) : ('ABOUT.NOTAVAILABLE' | translate) }}</span>
 								</li>
 							</ul>
