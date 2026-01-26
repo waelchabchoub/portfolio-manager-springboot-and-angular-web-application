@@ -7,7 +7,6 @@ import { Observable, BehaviorSubject } from 'rxjs';
 	providedIn: 'root',
 })
 export class TranslationService {
-	private apiKey = 'AIzaSyDVbVkaIr2jl9wmxscpTXVDbdbckQ5-59Y';
 	private defaultLanguage: string = 'en';
 	private availableLanguages: string[] = ['en'];
 	private languagesSubject: BehaviorSubject<string[]> = new BehaviorSubject<string[]>([]);
