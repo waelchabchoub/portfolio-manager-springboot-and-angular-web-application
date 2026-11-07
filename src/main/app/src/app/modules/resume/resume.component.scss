@@ -1,0 +1,52 @@
+.cv-download {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 18px;
+	padding: 12px 28px;
+	border-radius: 50px;
+	background: var(--accent-color);
+	color: var(--contrast-color);
+	font-family: var(--nav-font);
+	font-weight: 500;
+	text-decoration: none;
+	box-shadow: 0 6px 18px color-mix(in srgb, var(--accent-color), transparent 65%);
+	transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.cv-download__icon {
+	font-size: 1.25rem;
+}
+
+.cv-download__arrow {
+	font-size: 0.95rem;
+	transition: transform 0.25s ease;
+}
+
+.cv-download:hover {
+	color: var(--contrast-color);
+	background: color-mix(in srgb, var(--accent-color), black 12%);
+	transform: translateY(-2px);
+	box-shadow: 0 10px 24px color-mix(in srgb, var(--accent-color), transparent 55%);
+}
+
+.cv-download:hover .cv-download__arrow {
+	transform: translateY(3px);
+}
+
+.cv-download:focus-visible {
+	outline: 3px solid color-mix(in srgb, var(--accent-color), white 55%);
+	outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.cv-download,
+	.cv-download__arrow {
+		transition: none;
+	}
+
+	.cv-download:hover,
+	.cv-download:hover .cv-download__arrow {
+		transform: none;
+	}
+}

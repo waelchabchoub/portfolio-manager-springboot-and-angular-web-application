@@ -6,9 +6,10 @@ import { AuthService } from 'src/app/services/auth.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-	selector: 'app-about',
-	templateUrl: './about.component.html',
-	styleUrls: ['./about.component.scss']
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.scss'],
+    standalone: false
 })
 export class AboutComponent implements OnInit {
 	user: User = {} as User;

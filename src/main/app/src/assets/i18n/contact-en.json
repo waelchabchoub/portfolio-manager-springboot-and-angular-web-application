@@ -10,6 +10,9 @@
 		"SENDMESSAGE": "Send Message",
 		"LOADING": "Loading",
 		"SENDERROR": "Please fill in the form!",
-		"SENDSUCCESS": "Your message has been sent. Thank you!"
+		"SENDSUCCESS": "Your message has been sent. Thank you!",
+		"INVALID": "Please check your entries (valid email, message up to 5000 characters).",
+		"TOOMANY": "Too many messages sent. Please try again later.",
+		"SERVERERROR": "The message could not be sent. Please try again later."
 	}
 }

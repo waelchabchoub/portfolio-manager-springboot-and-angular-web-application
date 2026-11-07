@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Generated Angular build (built by the Dockerfile, or locally with `ng build`) ###
+/src/main/resources/static/

@@ -29,29 +29,34 @@
 						<div class="col-md-6">
 							<label for="name-field" class="pb-2">{{ 'CONTACT.YOURNAME' | translate }}</label>
 							<input type="text" [(ngModel)]="formData.name" name="name" id="name-field"
-								class="form-control" required="" />
+								class="form-control" required="" maxlength="100" />
 						</div>
 						<div class="col-md-6">
 							<label for="email-field" class="pb-2">{{ 'CONTACT.YOUREMAIL' | translate }}</label>
 							<input type="email" [(ngModel)]="formData.email" class="form-control" name="email"
-								id="email-field" required="" />
+								id="email-field" required="" maxlength="254" />
 						</div>
 						<div class="col-md-12">
 							<label for="subject-field" class="pb-2">{{ 'CONTACT.SUBJECT' | translate }}</label>
 							<input type="text" [(ngModel)]="formData.subject" class="form-control" name="subject"
-								id="subject-field" required="" />
+								id="subject-field" required="" maxlength="150" />
 						</div>
 
 						<div class="col-md-12">
 							<label for="message-field" class="pb-2">{{ 'CONTACT.MESSAGE' | translate }}</label>
 							<textarea [(ngModel)]="formData.message" class="form-control" name="message" rows="10"
-								id="message-field" required=""></textarea>
+								id="message-field" required="" maxlength="5000"></textarea>
+						</div>
+						<div class="hp-field" aria-hidden="true">
+							<label for="website-field">Website</label>
+							<input type="text" [(ngModel)]="formData.website" name="website" id="website-field"
+								tabindex="-1" autocomplete="off" />
 						</div>
 						<div class="col-md-12 text-center">
 							<div *ngIf="isLoading">{{ 'CONTACT.LOADING' | translate }}</div>
 							<div class="text-danger" *ngIf="formErrorMessage">{{ 'CONTACT.SENDERROR' | translate }}
 							</div>
-							<div class="text-danger" *ngIf="serverErrorMessage">{{serverErrorMessage}}</div>
+							<div class="text-danger" *ngIf="serverErrorMessage">{{ serverErrorMessage | translate }}</div>
 							<div class="text-success" *ngIf="successMessage">{{ 'CONTACT.SENDSUCCESS' | translate }}
 							</div>
 							<button type="submit">{{ 'CONTACT.SENDMESSAGE' | translate }}</button>

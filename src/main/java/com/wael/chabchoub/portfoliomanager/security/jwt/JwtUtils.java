@@ -32,7 +32,7 @@ public class JwtUtils {
 		try {
 			Jwts.parserBuilder().setSigningKey(getKey()).build().parseClaimsJws(token);
 			return true;
-		} catch (ExpiredJwtException | MalformedJwtException | UnsupportedJwtException e) {
+		} catch (JwtException | IllegalArgumentException e) {
 			return false;
 		}
 	}

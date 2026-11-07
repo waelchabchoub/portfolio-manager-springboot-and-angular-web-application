@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-	selector: 'app-language-selection',
-	templateUrl: './language-selection.component.html',
-	styleUrls: ['./language-selection.component.scss']
+    selector: 'app-language-selection',
+    templateUrl: './language-selection.component.html',
+    styleUrls: ['./language-selection.component.scss'],
+    standalone: false
 })
 export class LanguageSelectionComponent implements OnInit {
 	availableLanguages: string[] = [];

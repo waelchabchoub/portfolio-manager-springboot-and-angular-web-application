@@ -2,6 +2,11 @@
 	<div class="container section-title" data-aos="fade-up">
 		<h2>{{ 'RESUME.SELF' | translate }}</h2>
 		<p>{{ 'RESUME.DESCRIPTION' | translate }}</p>
+		<a class="cv-download" [href]="cvUrl" download="Wael_Chabchoub_CV.pdf">
+			<i class="bi bi-file-earmark-pdf cv-download__icon" aria-hidden="true"></i>
+			<span>{{ 'RESUME.DOWNLOAD_CV' | translate }}</span>
+			<i class="bi bi-download cv-download__arrow" aria-hidden="true"></i>
+		</a>
 	</div>
 	<div class="container">
 		<div class="row">
@@ -11,8 +16,6 @@
 					<h4>Wael Chabchoub</h4>
 					<p><em>{{ 'RESUME.SUMMARY.DESCRIPTION' | translate }}</em></p>
 					<ul>
-						<li>Roermonder str 268a, Aachen, DE</li>
-						<li>(49) 15235871100</li>
 						<li>waelchabchoub&commat;outlook.com</li>
 					</ul>
 				</div><!-- End Resume Item -->
@@ -33,8 +36,17 @@
 			<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
 				<h3 class="resume-title">{{ 'RESUME.PROFFESIONALEXPERIENCE.SELF' | translate }}</h3>
 				<div class="resume-item">
+					<h4>{{ 'RESUME.PROFFESIONALEXPERIENCE.TITLE7' | translate }}</h4>
+					<h5>03.2026 - Present</h5>
+					<p><em>LIMAA Technologies, Cologne, DE</em></p>
+					<ul>
+						<li>{{ 'RESUME.PROFFESIONALEXPERIENCE.DESCRIPTION7' | translate }}</li>
+						<li><strong>{{ 'SKILLS.SELF' | translate }}: </strong>Java · Spring Boot · Python · TypeScript · React · PostgreSQL · RabbitMQ · Docker · GitHub Actions · IEC 62304 · Penetration Testing</li>
+					</ul>
+				</div><!-- End Resume Item -->
+				<div class="resume-item">
 					<h4>{{ 'RESUME.PROFFESIONALEXPERIENCE.TITLE6' | translate }}</h4>
-					<h5>03.2023 - Present</h5>
+					<h5>03.2023 - 02.2026</h5>
 					<p><em>Invitec GmbH &amp; Co. KG, Aachen, DE</em></p>
 					<ul>
 						<li>{{ 'RESUME.PROFFESIONALEXPERIENCE.DESCRIPTION6' | translate }}</li>

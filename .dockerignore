@@ -1,0 +1,6 @@
+.git
+.idea
+target
+**/node_modules
+src/main/app/.angular
+src/main/resources/static
