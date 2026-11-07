@@ -1,6 +1,8 @@
 # Stage 1: build the Angular app. angular.json writes it to ../resources/static
 FROM node:22-slim AS frontend
 WORKDIR /build/src/main/app
+# The lockfile was written by npm 11; the npm 10 bundled with Node 22 rejects it ("Missing: chokidar ...")
+RUN npm install -g npm@11.11.0
 COPY src/main/app/package.json src/main/app/package-lock.json ./
 RUN npm ci --no-audit --no-fund
 COPY src/main/app ./
