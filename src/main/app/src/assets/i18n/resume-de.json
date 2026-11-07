@@ -1,6 +1,7 @@
 {
 	"RESUME": {
 		"SELF": "Lebenslauf",
+		"DOWNLOAD_CV": "Lebenslauf herunterladen (PDF)",
 		"DESCRIPTION": "Leidenschaftlicher und ergebnisorientierter Softwareentwickler mit starkem Fokus auf Java-Entwicklung und maschinelles Lernen. Kompetent im Aufbau skalierbarer, effizienter und innovativer Softwarelösungen zur Lösung komplexer Probleme. Engagiert, an der Spitze der Technologie zu bleiben und wirkungsvolle Anwendungen zu liefern.",
 		"SUMMARY": {
 			"SELF": "Zusammenfassung",
@@ -28,7 +29,9 @@
 			"TITLE5": "Trainer für Cybersicherheit",
 			"DESCRIPTION5": "Gestaltung und Leitung praxisorientierter Laborworkshops, die eine große Gruppe von Studenten einbezogen. Implementierung praktischer Übungen, die zu einer deutlichen Verbesserung der Fähigkeiten führten, wie durch die gesteigerte Projektabschlussrate der Teilnehmer belegt wurde.",
 			"TITLE6": "Softwareentwickler",
-			"DESCRIPTION6": "Revolutionierte Krankenhausabläufe durch die Gestaltung und Entwicklung einer fortschrittlichen Softwareanwendung, die interne Prozesse optimierte, die Patientenversorgung verbesserte, die Verwaltungsabläufe effizienter gestaltete und das Risiko von medizinischen Fehlern minimierte, was zu einer höheren Patientenzufriedenheit und einer Produktivitätssteigerung des Krankenhauspersonals führte."
+			"DESCRIPTION6": "Revolutionierte Krankenhausabläufe durch die Gestaltung und Entwicklung einer fortschrittlichen Softwareanwendung, die interne Prozesse optimierte, die Patientenversorgung verbesserte, die Verwaltungsabläufe effizienter gestaltete und das Risiko von medizinischen Fehlern minimierte, was zu einer höheren Patientenzufriedenheit und einer Produktivitätssteigerung des Krankenhauspersonals führte.",
+			"TITLE7": "Softwareentwickler",
+			"DESCRIPTION7": "Entwicklung von LIMAApath, einer webbasierten Plattform für digitale Pathologie als In-vitro-Diagnostik-Medizinprodukte-Software (IVDR, IEC 62304), von der Bildkonvertierung bis zum Web-Viewer. Konzeption und Betrieb des Java/Spring-Boot-Microservice-Backends (PostgreSQL, RabbitMQ) sowie der Python-Konvertierungspipeline (CZI zu OME-Zarr) und Entwicklung des React/TypeScript-Viewers mit Mehrkanalanzeige, Annotationswerkzeugen und gespeicherten Benutzereinstellungen. Verantwortung für CI/CD aller Services (GitHub Actions, Docker, GHCR, Nexus) inklusive Sicherheitsscans, SBOMs und signierter Artefakte, Durchführung von Penetrationstests der Webanwendung und ihrer APIs, Automatisierung von Audit-Nachweisen für den regulierten Prozess sowie Zusammenarbeit mit Product, QA und RA bei Anforderungen, Risiko- und Architekturdokumentation und Release-Management."
 		}
 	}
 }

@@ -1,6 +1,7 @@
 {
 	"RESUME": {
 		"SELF": "Resume",
+		"DOWNLOAD_CV": "Download CV (PDF)",
 		"DESCRIPTION": "Passionate and results-oriented Software Engineer with a strong focus on Java development and machine learning. Adept at building scalable, efficient, and innovative software solutions to solve complex problems. Committed to staying at the forefront of technology trends and delivering impactful applications.",
 		"SUMMARY": {
 			"SELF": "Summary",
@@ -28,7 +29,9 @@
 			"TITLE5": "Cyber Security Instructor",
 			"DESCRIPTION5": "Designed and led hands-on laboratory workshops that engaged up to 200 students at a time implemented practical exercises which resulted in significant skill enhancement as evidenced by improved projectcompletion rates among participants.",
 			"TITLE6": "Software Engineer",
-			"DESCRIPTION6": "Revolutionized hospital operations by designing and developing an advanced software application that streamlined internal processes, improving patient care delivery and administrative efficiency, minimized the risk of medical errorsresulting in improved patientsatisfaction and an increase in hospital staff productivity"
+			"DESCRIPTION6": "Revolutionized hospital operations by designing and developing an advanced software application that streamlined internal processes, improving patient care delivery and administrative efficiency, minimized the risk of medical errorsresulting in improved patientsatisfaction and an increase in hospital staff productivity",
+			"TITLE7": "Software Engineer",
+			"DESCRIPTION7": "Developing LIMAApath, a web-based digital pathology platform built as in-vitro diagnostic medical device software (IVDR, IEC 62304), from image conversion to the web viewer. Designing and maintaining the Java/Spring Boot microservice backend (PostgreSQL, RabbitMQ) and the Python CZI to OME-Zarr conversion pipeline, and building the React/TypeScript viewer with multi-channel display, annotation tools and saved user settings. Owning CI/CD for all services (GitHub Actions, Docker, GHCR, Nexus) with security scans, SBOMs and signed artifacts, performing penetration testing of the web application and its APIs, automating audit evidence for the regulated process, and collaborating with Product, QA and RA on requirements, risk and architecture documentation and release management."
 		}
 	}
 }

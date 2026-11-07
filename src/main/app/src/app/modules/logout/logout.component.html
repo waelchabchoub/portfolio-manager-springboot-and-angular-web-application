@@ -1,3 +1,11 @@
-<div *ngIf="isLoggedIn()" class="centered-container">
-	<button class="btn btn-outline-dark btn-outline-dark-white-text" (click)="logout()">Logout</button>
+<div *ngIf="isLoggedIn()" class="admin-panel">
+	<span class="admin-panel__label">Admin</span>
+	<button type="button" class="admin-btn" routerLink="/change-password">
+		<i class="bi bi-key" aria-hidden="true"></i>
+		<span>Change password</span>
+	</button>
+	<button type="button" class="admin-btn admin-btn--logout" (click)="logout()">
+		<i class="bi bi-box-arrow-right" aria-hidden="true"></i>
+		<span>Logout</span>
+	</button>
 </div>

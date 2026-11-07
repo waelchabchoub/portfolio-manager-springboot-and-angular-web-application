@@ -5,7 +5,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { HeaderComponent } from './modules/header/header.component';
 import { HeroComponent } from './modules/hero/hero.component';
 import { AboutComponent } from './modules/about/about.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { UserService } from './services/user.service';
 import { AdminComponent } from './modules/admin/admin.component';
@@ -30,55 +30,50 @@ import { ServiceComponent } from './modules/service/service.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { EmailService } from './services/email.service';
+import { ChangePasswordComponent } from './modules/change-password/change-password.component';
 
-@NgModule({
-	declarations: [
-		AppComponent,
-		HomeComponent,
-		HeaderComponent,
-		HeroComponent,
-		AboutComponent,
-		AdminComponent,
-		LogoutComponent,
-		LanguageSelectionComponent,
-		StatsComponent,
-		SkillsComponent,
-		ResumeComponent,
-		ServiceComponent,
-		ContactComponent,
-		FooterComponent,
-	],
-	imports: [
-		CommonModule,
-		BrowserModule,
-		HttpClientModule,
-		FormsModule,
-		AppRoutingModule,
-		LoggerModule.forRoot({
-			level: NgxLoggerLevel.DEBUG,
-			serverLogLevel: NgxLoggerLevel.ERROR,
-		}),
-		RouterModule.forRoot([], {
-			scrollPositionRestoration: 'enabled',
-			anchorScrolling: 'enabled'
-		}),
-		TranslateModule.forRoot({
-		}),
-		BrowserAnimationsModule,
-		MdbDropdownModule
-	],
-	providers: [
-		UserService,
-		{
-			provide: HTTP_INTERCEPTORS,
-			useClass: JwtInterceptor,
-			multi: true
-		},
-		TranslationService,
-		LibraryInitializationService,
-		SkillService,
-		EmailService
-	],
-	bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HomeComponent,
+        HeaderComponent,
+        HeroComponent,
+        AboutComponent,
+        AdminComponent,
+        LogoutComponent,
+        ChangePasswordComponent,
+        LanguageSelectionComponent,
+        StatsComponent,
+        SkillsComponent,
+        ResumeComponent,
+        ServiceComponent,
+        ContactComponent,
+        FooterComponent,
+    ],
+    bootstrap: [AppComponent], imports: [CommonModule,
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        LoggerModule.forRoot({
+            level: NgxLoggerLevel.DEBUG,
+            serverLogLevel: NgxLoggerLevel.ERROR,
+        }),
+        RouterModule.forRoot([], {
+            scrollPositionRestoration: 'enabled',
+            anchorScrolling: 'enabled'
+        }),
+        TranslateModule.forRoot({}),
+        BrowserAnimationsModule,
+        MdbDropdownModule], providers: [
+        UserService,
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: JwtInterceptor,
+            multi: true
+        },
+        TranslationService,
+        LibraryInitializationService,
+        SkillService,
+        EmailService,
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class AppModule { }

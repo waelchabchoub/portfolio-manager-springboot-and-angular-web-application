@@ -21,6 +21,7 @@ public class EmailService {
         String emailBody = "Sender: " + senderName + ",\n\n" + "Sender Email: " + senderEmail +  ",\n\n" + "Message: " + senderMessage;
         message.setText(emailBody);
         message.setFrom(portfolioManagerProperties.getEmail().getFrom());
+        message.setReplyTo(senderEmail);
 
         mailSender.send(message);
     }

@@ -10,6 +10,9 @@
 		"SENDMESSAGE": "Nachricht senden",
 		"LOADING": "Wird geladen",
 		"SENDERROR": "Bitte füllen Sie das Formular aus!",
-		"SENDSUCCESS": "Ihre Nachricht wurde gesendet. Vielen Dank!"
+		"SENDSUCCESS": "Ihre Nachricht wurde gesendet. Vielen Dank!",
+		"INVALID": "Bitte überprüfen Sie Ihre Eingaben (gültige E-Mail, Nachricht bis 5000 Zeichen).",
+		"TOOMANY": "Zu viele Nachrichten gesendet. Bitte versuchen Sie es später erneut.",
+		"SERVERERROR": "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
 	}
 }
